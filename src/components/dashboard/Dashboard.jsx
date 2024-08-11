@@ -1,16 +1,25 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import "./Dashboard.css";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signOut } from "firebase/auth";
 
 const Dashboard = () => {
-    const navigate=useNavigate();
+
+  const navigate=useNavigate();
+  
+  useEffect(() => {
+    if (!localStorage.getItem("uid")) {
+      navigate('/');
+    }
+  }, [navigate]);
+
+
   const logout = () => {
     signOut(auth)
       .then(() => {
         localStorage.clear();
-        navigate('/login')
+        navigate('/')
 
       })
       .catch((error) => {
@@ -24,7 +33,7 @@ const Dashboard = () => {
           <img src={localStorage.getItem("photoUrl")} />
           <div>
             <p>{localStorage.getItem("cName")}</p>
-            <button onClick={logout}>Logout</button>
+            <button onClick={logout} className="logout-btn">Logout</button>
           </div>
         </div>
         <hr />
