@@ -1,0 +1,315 @@
+.dasgboard-wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.side-nav{
+    width: 20%;
+    background: #282c34;
+
+}
+.main-container{
+    width: 80%;
+    background: #eee;
+    padding: 15px;
+}
+.profile-info{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.profile-info img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile-info p{
+    color: white;
+    padding: 10px;
+
+}
+.menu{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.menu-link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.menu-link:hover{
+    background: blue;
+}
+
+.new-invoice-heading{
+    font-size: 20px;
+    color: rgb(82,80,80);
+    margin-bottom: 10px;
+}
+.first-row{
+    display: flex;
+    gap: 2%;
+    margin-top: 10px;
+}
+.first-row input{
+    padding: 7px;
+    width: 32%;
+    border: 1px solid rgb(49, 46, 46);
+    border-radius: 5px;
+}
+.add-btn{
+    margin-top: 10px;
+    padding: 7px;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-wrapper{
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    background: white;
+    margin-top:10px ;
+    min-height: 250px;
+}
+.product-list{
+    display: flex;
+    gap: 50px;
+
+}
+.product-list p{
+    text-align: left;
+    width: 20%;
+
+}
+.total-wrapper{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgb(73, 73, 81);
+}
+
+.total-wrapper p{
+    width: 20%;
+    color: royalblue;
+    padding-top: 10px;
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    gap: 20px;
+    background: white;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+.box p{
+    width: 20%;
+    text-transform: capitalize;
+
+}
+.delete-btn{
+    background: red;
+    color: white;
+    padding:5px ;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.view-btn{
+    background: green;
+}
+.invoice-wrapper{
+    width: 70%;
+    background: white;
+    min-height: 90vh;
+    margin: auto;
+    padding: 20px;
+}
+.invoice-header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.company-logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #333;
+    margin-bottom: 10px;
+}
+
+.customer-details h1{
+    color: royalblue;
+    margin-bottom: 10px;
+
+}
+.cName{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#333;
+    font-size: 20px;
+}
+.product-table{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse:collapse;
+}
+th{
+    background: royalblue;
+    color: white;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+
+}
+
+tfoot{
+    background: royalblue;
+    color: white;
+}
+
+.print-btn{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+.invoice-top-header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.setting-wrapper{
+    min-height: 300px;
+    margin: auto;
+    background: #fff;
+    margin-top: 10px;
+    width: 80%;
+}
+.update-cName{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+.update-cName button{
+    padding: 5px;
+    background: rgb(78, 78, 92);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.update-cName input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.home-first-row{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.home-box{
+    width: 30%;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.box-1,.box-2,.box-3{
+    background: rgba(35, 44, 62, 0.644);
+}
+.home-second-row{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.chart-box{
+    width: 60%;
+    height: 55vh;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.recent-invoice-list{
+    width: 35%;
+    height: 55vh;
+    background: whitesmoke;
+    border-radius: 10px;
+
+}
+.recent-invoice-list div{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.recent-invoice-list div:hover{
+    background: #eee;
+    cursor: pointer;
+}
+.recent-invoice-list h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(44, 44, 139);
+    color: white;
+    padding: 10px;
+}
+.recent-invoice-list div p{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.no-invoice-wrapper{
+    width: 100%;
+    height: 100vh;
+    gap: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-invoice-wrapper button{
+    border: none;
+    padding: 10px;
+    background: rgb(45, 45, 206);
+    color: white;
+    border-radius: 5px;
+}
+
+.invoice-footer{
+    margin-top: 30px;
+}
